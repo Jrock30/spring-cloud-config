@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: '{cipher}239bedc941d359883bccf08d524ca2ba23300c3ff81c05d951430e5112d1cd6b' # {cipher}를 붙이면 암호화된 데이터라고 알려준다고 생각
+
+token:
+  expiration_time: 86400000 # 1일
+  secret: user_token_native_application
+
+gateway: 
+  ip: 172.30.1.34
