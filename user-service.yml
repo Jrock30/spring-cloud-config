@@ -3,11 +3,15 @@ spring:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb
     username: sa
-    password: '{cipher}239bedc941d359883bccf08d524ca2ba23300c3ff81c05d951430e5112d1cd6b' # {cipher}를 붙이면 암호화된 데이터라고 알려준다고 생각
+    # {cipher}를 붙이면 암호화된 데이터라고 알려준다고 생각 , 1234
+    password: '{cipher}AQC/tbUhJ2eajlc03dZftxkVYFZIg3bjfUSPavHONIGNTqV7eL51DwkghDO+Eoj7mmCv9MyS2ekxT54ckWh1S1GS9tTXqVj/vPzVMVQUeRsZVQVycBAMMHAazWnv1bVlgNsBZRjNEMwOihcE1/FIZXfYHGX+swbCjaiMQePT8RFyzll5nYUBK6rKZhgdOhHFl8/G9wc0vaQwBMz/4e0Q2Nag4WQyccJBbWV1OhdYgKLvmkqjYbrdj5TY5l+jQI/Znv9pc1RdX/QBmza+wpCodx23CXKfE4UHrBdMGCz6+hUW2MGKGPfM6GNSOKEGuO4TXLVF2d1wwQnWyiZpW4DfscsSEk649VERj9YiacYp7yfWsaYmDAvb9pX6X8ApF3Re93s='
 
 token:
   expiration_time: 86400000 # 1일
-  secret: user_token_native_application
+  secret: '{cipher}AQBepoF8nlKDRSf8g+vwLjArkSF/kt17zus2vSlBI1a2DVDEwfDGqCao7rNUDAUfW0HpZuyRRB1fqDMZboPu6aakUN/b2JExd5zAU5mcUMNtVWcvojjvyYu0YZS9w8oKKb5Uw5pmF9Vq4YHDkMJ3Dn4MELIu01ayxH645wSj3tQ6C4nXtsuWiXVQrK62hV+m2+X4N73cb2rZNFfO3RKkxGB3dYfYnmNC0lHxKxxza6aC0kAnY+0h0FSxB9AV2YQeyTm33avtJpHSbNbKcGI5WwfYLwnamJrV6YmqH0tUna+I0f+5cshjWvhF8f7G/SKEYn7AuoTn0EXxZ2yc+l/YXifbkXGpo7V061dIx+7IZlS/GwskOJG4rSpLYJU7o+/dDek6VF6E3JkgriBNU4+ZK1qG'
 
 gateway: 
   ip: 172.30.1.34
+
+order_service:
+  url: http://127.0.0.1:8000/order-service/%s/orders

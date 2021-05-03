@@ -1,6 +1,7 @@
 token:
   expiration_time: 86400000 # 1일
-  secret: my_token_default
+  # user_token_native_application
+  secret: '{cipher}AQBepoF8nlKDRSf8g+vwLjArkSF/kt17zus2vSlBI1a2DVDEwfDGqCao7rNUDAUfW0HpZuyRRB1fqDMZboPu6aakUN/b2JExd5zAU5mcUMNtVWcvojjvyYu0YZS9w8oKKb5Uw5pmF9Vq4YHDkMJ3Dn4MELIu01ayxH645wSj3tQ6C4nXtsuWiXVQrK62hV+m2+X4N73cb2rZNFfO3RKkxGB3dYfYnmNC0lHxKxxza6aC0kAnY+0h0FSxB9AV2YQeyTm33avtJpHSbNbKcGI5WwfYLwnamJrV6YmqH0tUna+I0f+5cshjWvhF8f7G/SKEYn7AuoTn0EXxZ2yc+l/YXifbkXGpo7V061dIx+7IZlS/GwskOJG4rSpLYJU7o+/dDek6VF6E3JkgriBNU4+ZK1qG'
 
 gateway: 
   ip: 172.30.1.34
