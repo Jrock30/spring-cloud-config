@@ -13,5 +13,8 @@ token:
 gateway: 
   ip: 172.30.1.34
 
-order_service:
-  url: http://127.0.0.1:8000/order-service/%s/orders
+order_service: 
+  url: http://ORDER-SERVICE/order-service/%s/orders
+  # url: http://127.0.0.1:8000/order-service/%s/orders
+  exception:
+    orders_is_empty: User is orders is empty.
